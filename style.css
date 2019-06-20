@@ -123,12 +123,13 @@ i
 
 .dropdown-content
 {
-  display: none;
-  position: absolute;
-  background-color: rgba(35,35,35,1);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: rgba(35,35,35,1);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);
+    z-index: 1;
 }
 
 .right
@@ -152,11 +153,6 @@ i
 .dropdown:hover .dropdown-content
 {
     display: block;
-}
-
-.dropdown:hover .dropbtn
-{
-    background-color: #3e8e41;
 }
 
 .navitem > a
@@ -191,6 +187,12 @@ section
 }
 
 @media screen and (max-width:800px) {
+    section {
+        grid-template-rows: auto 50px 150px 100px auto;
+    }
+}
+
+@media screen and (max-height:500px) {
     section {
         grid-template-rows: auto 50px 150px 100px auto;
     }
@@ -236,6 +238,12 @@ section
 }
 
 @media screen and (max-width:800px){
+    .keskiteksti {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-height:500px){
     .keskiteksti {
         font-size: 50px;
     }
@@ -297,6 +305,19 @@ section
     animation-duration: 0.2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+}
+
+@media screen and (max-width:800px){
+    .keskiteksti {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-height:500px){
+    #play {
+        width:3em;
+        height:3em;    
+    }
 }
 
 @keyframes pulsatingcock {
